@@ -18,9 +18,9 @@ public class CalendarioBasico
     }
     
     public String obtenerFecha(){
-        Dia1 = dia;
-        Mes1 = mes;
-        Ano1 = ano;
+        String Dia1 = dia +"";
+        String Mes1 = mes+"";
+        String Ano1 = ano+"";
 
         if(dia < 10){
             Dia1 = "0" + dia;
