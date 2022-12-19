@@ -2,9 +2,9 @@
 public class CalendarioBasico
 {
     // instance variables - replace the example below with your own
-    private int primero;
-    private int segundo;
-    private int tercero;
+    private int dia;
+    private int mes;
+    private int ano;
 
     /**
      * Constructor for objects of class CalendarioBasico
@@ -12,9 +12,9 @@ public class CalendarioBasico
     public CalendarioBasico()
     {
         // initialise instance variables
-        primero = 1;
-        segundo = 1;
-        tercero = 1;
+        dia = 1;
+        mes = 1;
+        ano = 1;
     }
 
 }
