@@ -16,5 +16,27 @@ public class CalendarioBasico
         mes = 1;
         ano = 1;
     }
+    
+    public String obtenerFecha(){
+        Dia1 = dia;
+        Mes1 = mes;
+        Ano1 = ano;
 
+        if(dia < 10){
+            Dia1 = "0" + dia;
+        }
+        if(mes < 10){
+            Mes1 = "0" + mes;
+        }
+        if(ano < 10){
+            Ano1 = "0" + ano;
+        }
+        return Dia1 + "-" + Mes1 + "-" + Ano1;
+    }
+    
+    public void fijarFecha(int nuevoDia, int nuevoMes, int nuevoAno){
+        dia = nuevoDia;
+        mes = nuevoMes;
+        ano = nuevoAno;
+    }
 }
