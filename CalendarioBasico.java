@@ -18,25 +18,38 @@ public class CalendarioBasico
     }
     
     public String obtenerFecha(){
-        String Dia1 = dia +"";
-        String Mes1 = mes+"";
-        String Ano1 = ano+"";
+        String dia1 = dia +"";
+        String mes1 = mes+"";
+        String ano1 = ano+"";
 
         if(dia < 10){
-            Dia1 = "0" + dia;
+            dia1 = "0" + dia;
         }
         if(mes < 10){
-            Mes1 = "0" + mes;
+            mes1 = "0" + mes;
         }
         if(ano < 10){
-            Ano1 = "0" + ano;
+            ano1 = "0" + ano;
         }
-        return Dia1 + "-" + Mes1 + "-" + Ano1;
+        return dia1 + "-" + mes1 + "-" + ano1;
     }
     
     public void fijarFecha(int nuevoDia, int nuevoMes, int nuevoAno){
         dia = nuevoDia;
         mes = nuevoMes;
         ano = nuevoAno;
+    }
+    
+    public void avanzerFecha(){
+        dia += 1;
+        if (dia>30){
+            dia=1;
+            if(mes> 12){
+                mes=1;
+                if(ano>99){
+                    ano=1;
+                }
+            }
+        }
     }
 }
