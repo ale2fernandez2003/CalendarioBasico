@@ -41,6 +41,7 @@ public class CalendarioBasico
     }
     
     public void avanzerFecha(){
+        dia += 1;
         if (dia>30){
             mes += 1;
             dia=1;
